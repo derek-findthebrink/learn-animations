@@ -1,17 +1,10 @@
-include ../mixins/index.pug
+extends ../layouts/default.pug
 
-doctype html
-html
-  head
-    +globalHead('../sass/index.scss', 'Learn Animations')
 
-  body
-    nav.main-navigation__container
-      a(href="/") LOGO
-      a(href="./wow.pug") WOW
-    h1 welcome to index.pug!
-    h2 fukk you
+block content
+  h1 welcome to index.pug!
+  h2 fukk you
 
-    //- footer scripts
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js")
-    script(src="../js/index.js")
+
+block scripts__page
+  script(src="../js/index.js")

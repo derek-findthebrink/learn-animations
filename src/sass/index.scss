@@ -1,4 +1,4 @@
-// @import './import.scss';
+@import './import.scss';
 
 // VARIABLES
 // -----------------------------------------------------------------------------
@@ -21,19 +21,29 @@ html {
 }
 
 li,
-a:link {
+a:link,
+p {
   color: $text-base-color;
 }
 
 // nav
-.main-navigation {
-  &__container {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    width: 100%;
-  }
+.navigation {
+  &__main {
+    &__container {
+      padding-left: 0;
 
-  & > a {
-    text-align: center;
+      & > ul {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-column-gap: 1em;
+        width: 100%;
+        padding-left: 0;
+        list-style-type: none;
+
+        & > li {
+          text-align: center;
+        }
+      }
+    }
   }
 }

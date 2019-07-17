@@ -1,8 +1,22 @@
 //- layout.pug
+
+include ../mixins/index.pug
+
 html
   head
+    block head
+      +globalHead('../sass/index.scss')
+
   body
-    block content
-    block foot
-      footer
-        p some footer content
+    header
+      block header
+        +navigation__main
+
+    main
+      block content
+        p I'm some cool content, fukk you
+
+    block scripts__generic
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js")
+
+    block scripts__page
