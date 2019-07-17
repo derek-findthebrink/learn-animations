@@ -1,21 +1,39 @@
 // @import './import.scss';
 
-$font-families-header: 'Source Sans Pro', 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+// VARIABLES
+// -----------------------------------------------------------------------------
+$font-family-header: 'Source Sans Pro', 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+$text-base-color: white;
 
+// LAYOUT
+// -----------------------------------------------------------------------------
 html {
-  font-family: $font-families-header;
-}
-
-body {
   background-color: black;
+  font-family: $font-family-header;
 }
 
+// apply styles to all headers
 @for $i from 1 through 6 {
   h#{$i} {
-    font-family: $font-families-header;
+    font-family: $font-family-header;
+    color: $text-base-color;
   }
 }
 
-h1 {
-  color: white;
+li,
+a:link {
+  color: $text-base-color;
+}
+
+// nav
+.main-navigation {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    width: 100%;
+  }
+
+  & > a {
+    text-align: center;
+  }
 }

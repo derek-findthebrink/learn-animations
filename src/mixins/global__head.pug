@@ -1,0 +1,11 @@
+mixin globalHead(cssPath, title)
+  //- add google fonts
+  link(
+    href="https://fonts.googleapis.com/css?family=Literata|Open+Sans|Source+Sans+Pro|Roboto&display=swap"
+    rel="stylesheet"
+  )
+  link(
+    href=cssPath
+    rel="stylesheet"
+  )
+  title= title
