@@ -1,0 +1,21 @@
+// @import './import.scss';
+
+$font-families-header: 'Source Sans Pro', 'Open Sans', Georgia, 'Times New Roman', Times, serif;
+
+html {
+  font-family: $font-families-header;
+}
+
+body {
+  background-color: black;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-family: $font-families-header;
+  }
+}
+
+h1 {
+  color: white;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "y",
+  "version": "0.1.0",
+  "description": "learn animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server ./_site",
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derek-findthebrink/learn-animations.git"
+  },
+  "author": "Derek Moore, Brink Technology Co.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derek-findthebrink/learn-animations/issues"
+  },
+  "homepage": "https://github.com/derek-findthebrink/learn-animations#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/register": "^7.4.4",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.12.0"
+  }
+}
