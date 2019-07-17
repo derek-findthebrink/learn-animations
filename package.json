@@ -4,9 +4,10 @@
   "description": "learn animations",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "http-server ./_site",
-    "start": "gulp serve"
+    "serve": "http-server ./dist",
+    "start": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,12 @@
     "@babel/core": "^7.5.4",
     "@babel/register": "^7.4.4",
     "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "http-server": "^0.11.1",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.5"
   }
 }
